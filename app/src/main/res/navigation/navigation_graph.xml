@@ -6,7 +6,7 @@
     app:startDestination="@id/chatListFragment">
     <fragment
         android:id="@+id/chatListFragment"
-        android:name="com.jemandandere.telegram.ui.ChatListFragment"
+        android:name="com.jemandandere.telegram.ui.fragments.ChatListFragment"
         android:label="fragment_chat_list"
         tools:layout="@layout/fragment_chat_list" >
         <action
@@ -15,7 +15,7 @@
     </fragment>
     <fragment
         android:id="@+id/settingsFragment"
-        android:name="com.jemandandere.telegram.ui.SettingsFragment"
+        android:name="com.jemandandere.telegram.ui.fragments.SettingsFragment"
         android:label="fragment_settings"
         tools:layout="@layout/fragment_settings" />
 </navigation>
