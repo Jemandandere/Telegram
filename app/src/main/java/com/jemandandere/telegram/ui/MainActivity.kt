@@ -1,10 +1,15 @@
-package com.jemandandere.telegram
+package com.jemandandere.telegram.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
 import androidx.appcompat.widget.Toolbar
+import androidx.navigation.Navigation
+import androidx.navigation.findNavController
+import androidx.navigation.ui.NavigationUI
+import com.jemandandere.telegram.App
+import com.jemandandere.telegram.R
 import com.jemandandere.telegram.databinding.ActivityMainBinding
 import com.mikepenz.materialdrawer.AccountHeader
 import com.mikepenz.materialdrawer.AccountHeaderBuilder
@@ -32,19 +37,21 @@ class MainActivity : AppCompatActivity() {
     private fun init() {
         toolbar = binding.toolbar
         setSupportActionBar(toolbar)
+        App.instance.navController = Navigation.findNavController(this, R.id.navigation_controller)
+        NavigationUI.setupActionBarWithNavController(this, App.instance.navController)
         createHeader()
         createDrawer()
     }
 
     private fun createHeader() {
         header = AccountHeaderBuilder()
-                .withActivity(this)
-                .withHeaderBackground(R.drawable.header)
-                .addProfiles(
-                        ProfileDrawerItem().withName(getString(R.string.default_username))
-                                .withEmail(getString(R.string.default_phone_number))
-                )
-                .build()
+            .withActivity(this)
+            .withHeaderBackground(R.drawable.header)
+            .addProfiles(
+                ProfileDrawerItem().withName(getString(R.string.default_username))
+                    .withEmail(getString(R.string.default_phone_number))
+            )
+            .build()
     }
 
     private fun createDrawer() {
