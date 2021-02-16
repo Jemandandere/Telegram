@@ -1,7 +1,15 @@
 <resources>
+    //Base
     <string name="app_name">Telegram</string>
+
+    //User
     <string name="default_username">Jemandandere</string>
     <string name="default_phone_number">+79050904050</string>
+    <string name="default_login">@JemandAndere</string>
+    <string name="default_status">В сети</string>
+    <string name="default_bio">О себе</string>
+
+    // Menu
     <string name="create_group">Создать группу</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="create_secret_chat">Создать секретный чат</string>
@@ -12,5 +20,10 @@
     <string name="settings">Настройки</string>
     <string name="invite">Пригласить друзей</string>
     <string name="help">Вопросы о телеграм</string>
-    <string name="default_status">В сети</string>
+
+    // Settings
+    <string name="account">Аккаунт</string>
+    <string name="settings_label_phone_number">Нажмите, что бы изменить номер телефона</string>
+    <string name="settings_label_login">Имя пользователя</string>
+    <string name="settings_label_bio">Напишите немного о себе</string>
 </resources>
