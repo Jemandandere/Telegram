@@ -3,4 +3,6 @@
     <string name="default_username">Jemandandere</string>
     <string name="default_phone_number">+79050904050</string>
     <string name="group_create">Создать группу</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

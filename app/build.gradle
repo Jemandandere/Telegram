@@ -50,6 +50,7 @@ dependencies {
     // Menu
     implementation "com.mikepenz:materialdrawer:7.0.0"
     implementation "com.mikepenz:materialdrawer-nav:7.0.0"
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
 
     // Tests
     testImplementation 'junit:junit:4.13.2'
