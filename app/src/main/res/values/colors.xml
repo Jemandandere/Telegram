@@ -6,6 +6,7 @@
     <color name="lazure">#0088cc</color>
     <color name="spb_metro2">#0078c9</color>
     <color name="accent">@color/white</color>
+    <color name="grey">#939393</color>
 
     <!-- Material DEFAULT colors -->
     <color name="material_drawer_primary">#2196F3</color>

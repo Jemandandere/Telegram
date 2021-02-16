@@ -1,19 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Text -->
+    // Text
     <dimen name="text_size_L">18sp</dimen>
     <dimen name="text_size_M">16sp</dimen>
-    <dimen name="text_size_S">14sp</dimen>
+    <dimen name="text_size_S">12sp</dimen>
 
-    <!-- Basic -->
+    // Basic
     <dimen name="match_constraint">0dp</dimen>
     <dimen name="horizontal_margin">16dp</dimen>
-    <dimen name="header_height">104dp</dimen>
+    <dimen name="vertical_margin">16dp</dimen>
+    <dimen name="vertical_margin_S">12dp</dimen>
+    <dimen name="vertical_margin_XS">8dp</dimen>
+    <dimen name="vertical_margin_XXS">4dp</dimen>
 
-    <!-- Portrait -->
-    <dimen name="portrait_size">64dp</dimen>
-    <dimen name="portrait_border_size">1dp</dimen>
+    // Univesal
+    <dimen name="header_height">104dp</dimen>
+    <dimen name="ripple_effect_radius">4dp</dimen>
+
+    // Avatar
+    <dimen name="avatar_size">64dp</dimen>
+    <dimen name="avatar_border_size">1dp</dimen>
 
     <!-- Settings Fragment -->
-    <dimen name="settings_vertical_portrait_margin_bottom">16dp</dimen>
+    <dimen name="settings_vertical_portrait_margin_bottom">@dimen/vertical_margin</dimen>
+
 </resources>
