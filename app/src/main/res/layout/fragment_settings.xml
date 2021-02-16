@@ -6,14 +6,57 @@
     android:layout_height="match_parent"
     tools:context=".ui.fragments.SettingsFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="SETTINGS"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/settings_header_block"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/header_height"
+        android:background="@color/lazure"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/setting_user_photo"
+            android:layout_width="@dimen/portrait_size"
+            android:layout_height="@dimen/portrait_size"
+            android:layout_marginStart="@dimen/horizontal_margin"
+            android:layout_marginBottom="@dimen/settings_vertical_portrait_margin_bottom"
+            android:scaleType="centerCrop"
+
+            android:src="@drawable/default_photo"
+            app:civ_border_color="@color/white"
+            app:civ_border_width="@dimen/portrait_border_size"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/settings_username"
+            android:layout_width="@dimen/match_constraint"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/horizontal_margin"
+            android:textColor="@color/accent"
+            android:textSize="@dimen/text_size_L"
+            app:layout_constraintBottom_toTopOf="@+id/settings_status"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/setting_user_photo"
+            app:layout_constraintTop_toTopOf="@+id/setting_user_photo"
+            tools:text="@string/default_username" />
+
+        <TextView
+            android:id="@+id/settings_status"
+            android:layout_width="@dimen/match_constraint"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/horizontal_margin"
+            android:textColor="@color/accent"
+            android:textSize="@dimen/text_size_S"
+            app:layout_constraintBottom_toBottomOf="@+id/setting_user_photo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/setting_user_photo"
+            app:layout_constraintTop_toBottomOf="@+id/settings_username"
+            tools:text="@string/default_status" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

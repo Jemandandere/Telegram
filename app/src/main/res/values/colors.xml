@@ -5,7 +5,7 @@
     <color name="alpha_white">#88FFFFFF</color>
     <color name="lazure">#0088cc</color>
     <color name="spb_metro2">#0078c9</color>
-
+    <color name="accent">@color/white</color>
 
     <!-- Material DEFAULT colors -->
     <color name="material_drawer_primary">#2196F3</color>
