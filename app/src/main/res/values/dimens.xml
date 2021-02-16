@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Text -->
+    <dimen name="text_size_L">18sp</dimen>
+    <dimen name="text_size_M">16sp</dimen>
+    <dimen name="text_size_S">14sp</dimen>
+
+    <!-- Basic -->
+    <dimen name="match_constraint">0dp</dimen>
+    <dimen name="horizontal_margin">16dp</dimen>
+    <dimen name="header_height">104dp</dimen>
+
+    <!-- Portrait -->
+    <dimen name="portrait_size">64dp</dimen>
+    <dimen name="portrait_border_size">1dp</dimen>
+
+    <!-- Settings Fragment -->
+    <dimen name="settings_vertical_portrait_margin_bottom">16dp</dimen>
+</resources>
