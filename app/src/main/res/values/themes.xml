@@ -28,6 +28,7 @@
         <item name="material_drawer_legacy_style">false</item> <!-- Enables legacy Material 1 style -->
 
         <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+        <item name="popupTheme">@style/actionMenu</item>
     </style>
 
     <style name="DrawerArrowStyle" parent="@style/Widget.AppCompat.DrawerArrowToggle">
