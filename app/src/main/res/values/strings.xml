@@ -5,7 +5,7 @@
     //User
     <string name="default_username">Jemandandere</string>
     <string name="default_phone_number">+79050904050</string>
-    <string name="default_login">@JemandAndere</string>
+    <string name="default_login">/@JemandAndere</string>
     <string name="default_status">В сети</string>
     <string name="default_bio">О себе</string>
 
@@ -28,4 +28,10 @@
     <string name="settings_label_bio">Напишите немного о себе</string>
     <string name="settings_menu_change_name">Изменить имя</string>
     <string name="settings_menu_exit">Выход</string>
+    <string name="default_secure_code">184970</string>
+    <string name="cd_register_image">register image</string>
+    <string name="register_text_enter_code">Введите код</string>
+    <string name="register_text_send_sms">Мы отправили СМС с кодом проверки на ваш телефон</string>
+    <string name="register_hint">- - - - - -</string>
+    <string name="register_title_your_phone">Ваш телефон</string>
 </resources>

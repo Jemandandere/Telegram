@@ -1,5 +1,6 @@
-package com.jemandandere.telegram.ui
+package com.jemandandere.telegram.ui.activities
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -35,9 +36,17 @@ class MainActivity : AppCompatActivity() {
 
     private fun init() {
         toolbar = binding.toolbar
-        setSupportActionBar(toolbar)
-        App.instance.navController = Navigation.findNavController(this, R.id.navigation_controller)
-        NavigationUI.setupActionBarWithNavController(this, App.instance.navController)
-        AppDrawer(this, toolbar).create()
+        if (false) {
+            setSupportActionBar(toolbar)
+            App.instance.navController =
+                Navigation.findNavController(this, R.id.navigation_controller)
+            NavigationUI.setupActionBarWithNavController(this, App.instance.navController)
+            AppDrawer(this, toolbar).create()
+        } else {
+            val intent = Intent(this, RegisterActivity::class.java)
+            startActivity(intent)
+        }
     }
+
+
 }

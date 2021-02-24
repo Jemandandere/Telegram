@@ -7,8 +7,8 @@ import com.jemandandere.telegram.R
 
 class SettingsFragment : Fragment(R.layout.fragment_settings) {
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
         setHasOptionsMenu(true)
     }
 

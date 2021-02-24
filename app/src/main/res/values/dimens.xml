@@ -23,5 +23,6 @@
 
     <!-- Settings Fragment -->
     <dimen name="settings_vertical_portrait_margin_bottom">@dimen/vertical_margin</dimen>
+    <dimen name="padding">5dp</dimen>
 
 </resources>

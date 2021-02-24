@@ -7,14 +7,14 @@
     tools:context=".ui.activities.MainActivity">
 
     <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
+        android:id="@+id/register_toolbar"
+        style="@style/main_toolbar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        style="@style/main_toolbar" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <fragment
-        android:id="@+id/navigation_controller"
+        android:id="@+id/register_navigation_controller"
         android:name="androidx.navigation.fragment.NavHostFragment"
         android:layout_width="@dimen/match_constraint"
         android:layout_height="@dimen/match_constraint"
@@ -22,7 +22,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar"
-        app:navGraph="@navigation/navigation_main_graph" />
+        app:layout_constraintTop_toBottomOf="@+id/register_toolbar"
+        app:navGraph="@navigation/navigation_register_graph" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
